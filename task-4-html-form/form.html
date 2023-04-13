@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      submitForms = function() {
+          document.forms["form1"].submit();
+          document.forms["form2"].submit();
+          return true;
+      }
+  </script>
+    <style>
+      .formbox{
+        border: 4px solid black;
+        height: 1350px;
+        width: 500px;
+        margin-left: 300px;
+        margin-top: 50px;
+        padding: 30px;
+        background-color: rgb(176, 212, 239);
+      }
+      .primdet{
+        border: 3px solid rgb(97, 155, 235);
+        height: 250px;
+        width: 440px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        padding-left: 20px;
+      }
+      .cdet{
+        border: 3px solid rgb(97, 155, 235);
+        height: 200px;
+        width: 440px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 3px;
+      }
+      .address{
+        border: 3px solid rgb(97, 155, 235);
+        height: 535px;
+        width: 440px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 3px;
+      }
+      .resa{
+        border: 3px solid rgb(97, 155, 235);
+        height: 150px;
+        width: 390px;
+        margin-left: 1px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 1px;
+      }
+      .sa{
+        border: 3px solid rgb(97, 155, 235);
+        height: 80px;
+        width: 390px;
+        margin-left: 1px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 0px;
+      }
+      .ma{
+        border: 3px solid rgb(97, 155, 235);
+        height: 150px;
+        width: 390px;
+        margin-left: 1px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 0px;
+      }
+      
+    </style>
+  </head>
+  <div class="formbox">
+    <body>
+        <h1 style="text-align: center;"><b>HTML FORM</b></h1>
+        <div class="primdet">
+          <p style="font-size: 18px; color: rgb(58, 58, 157);"><b>Primary Details</b></p>
+          <form action="" >
+
+              <div style="float: right; padding-right: 90px; padding-bottom: 380px;">
+                <label for="valid">Valid till</label> <br> 
+                <input type="month" id="valid" name="valid" style="width: 80px; float: right;">
+              </div> <br>
+            <label for="medino">Medicare No.:</label> <input minlength="8" maxlength="8" type="number" id="medino" name="medino" style="width: 100px;"> <span><b>/</b></span>
+            <input type="number" minlength="2" maxlength="2" id="yj" name="yj" style="width:30px";> <br>
+            <label style="width: 150px; margin-right: 59px;" for="title">Title:</label> <select name="title" id="title">
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Ms">Ms</option>
+              <option value="Miss">Miss</option>
+            </select> <br>
+            <label style="width: 168px; float: right;" for="name">First &emsp; Middle &emsp; Last</label>
+            <br> 
+            <label style="width: 80px; margin-right: 50px;" for="name">Name:</label> <input type="name" id="name" name="name" style="width: 160px;"> <br>
+            <label style="width: 80px; margin-right: 15px;" for="pname">Pref. Name:</label> <input type="pname" id="pname" name="pname" style="width: 150px;"> <br>
+            <label for="dob" style="margin-right: 54px;">DOB:</label> <input type="date"  id="dob" name="dob" style="width: 100px;"> <br>
+            <label for="sex" style="margin-right: 60px;">Sex:</label> <input type="radio" id="sex" name="sex"> <span>Male</span> <input type="radio" id="sex" name="sex"> <span>Female</span> <br>
+            <label style="width: 80px; margin-right: 2px;" for="fname">Family Name:</label> <input type="fname" id="fname" name="fname" style="width: 140px;"> <br>
+
+            </form>
+        </div>
+
+        <div class="cdet">
+          <p style="font-size: 18px; color: rgb(58, 58, 157);"><b>Contact Details</b></p>
+          <form action="">
+
+            <div style="float: right; padding-right: 150px;  padding-bottom: 5px; ">
+              <label for="hw" style="width: 20px;">Home &emsp; &emsp; Work</label> <br> 
+              <input type="tel" id="hw" name="hw" style="width: 80px; float: right;">
+              <input type="tel" id="hw" name="hw" style="width: 80px; float: right;"> <br>
+              <label for="mf" style="width: 20px;">Mobile &emsp; &emsp; Fax</label> <br> 
+              <input type="tel" id="mf" name="mf" style="width: 80px; float: right;">
+              <input type="tel" id="mf" name="mf" style="width: 80px; float: right;">
+            </div> <br>
+            <label for="pno" style="width: 80px; display: inline-block; margin-right: 0px; float: left;">Phone No.:</label> <br>
+            <label style="width: 70px; margin-right: 2px;" for="eno">Emergency No.:</label> <input type="eno" id="eno" name="eno" style="width: 120px;"> <br>
+            <label style="width: 70px; margin-right: 64px;" for="email">Email:</label> <input type="email" id="email" name="email" style="width: 120px;"> <br>
+
+          </form>
+        </div>
+
+        <div class="address">
+
+            <p style="font-size: 18px; color: rgb(58, 58, 157);"><b>Address Details</b></p>
+            <div class="resa">
+              <p style="font-size: 16px; color: rgb(58, 58, 157);"><b>Residential Address </b></p>
+              <form action="">
+
+                <label style="width: 70px; margin-right: 17px;" for="a1">Address 1:</label> <input type="text" id="a1" placeholder="house/apartment no.,street address" name="a1" style="width: 250px;"> <br>
+                <label style="width: 70px; margin-right: 17px;" for="a2">Address 2:</label> <input type="text" id="a2" placeholder="locality or landmark" name="a2" style="width: 250px;"> <br>
+                <label style="width: 70px; margin-right: 54px;" for="city">City:</label> <input type="text" id="city" name="city" style="width: 120px;"> 
+                <label style="width: 70px; margin-right: 3px; margin-left: 10px;" for="state">State:</label> <input type="text" id="state" name="state" style="width: 64px;"> <br>
+                <label style="width: 70px; margin-right: 26px;" for="pcode">Pin code:</label> <input type="text" id="[]" name="pcode" style="width: 68px;"> 
+                <label style="width: 70px; margin-right: 3px; margin-left: 31px;" for="country">Counrty:</label> <input type="text" id="country" name="counrty" style="width: 75px;">
+
+              </form>
+            </div>
+
+            <div class="sa">
+              <p style="font-size: 16px; color: rgb(58, 58, 157);"><b>Single Address </b></p>
+              <p>Are mailing address and residential address same?  <input type="checkbox" name="s" id="s"> <span>Yes</span> </p>
+            </div>
+
+            <div class="ma">
+              <p style="font-size: 16px; color: rgb(58, 58, 157);"><b>Mailing Address </b></p>
+              <form action="">
+
+                <label style="width: 70px; margin-right: 17px;" for="a1">Address 1:</label> <input type="text" id="a1" placeholder="house/apartment no.,street address" name="a1" style="width: 250px;"> <br>
+                <label style="width: 70px; margin-right: 17px;" for="a2">Address 2:</label> <input type="text" id="a2" placeholder="locality or landmark" name="a2" style="width: 250px;"> <br>
+                <label style="width: 70px; margin-right: 54px;" for="city">City:</label> <input type="text" id="city" name="city" style="width: 120px;"> 
+                <label style="width: 70px; margin-right: 3px; margin-left: 10px;" for="state">State:</label> <input type="text" id="state" name="state" style="width: 64px;"> <br>
+                <label style="width: 70px; margin-right: 26px;" for="pcode">Pin code:</label> <input type="text" id="[]" name="pcode" style="width: 68px;"> 
+                <label style="width: 70px; margin-right: 3px; margin-left: 31px;" for="country">Counrty:</label> <input type="text" id="country" name="counrty" style="width: 75px;">
+
+              </form>
+
+            </div>
+        </div>
+
+        <form action="" style="margin-top: 20px; margin-left: 30px;">
+
+          <label style="width: 80px; margin-right: 18px; margin-top: 20px;" for="ihi">IHI Number:</label> <span>80036</span> <input type="number" id="ihi" name="ihi" style="width: 150px;"> <br>
+          <label style="width: 80px; margin-right: 2px; margin-top: 20px;" for="ns">Number Status:</label>  <input type="text" id="ns" name="ns" style="width: 150px;"> <br>
+          <label style="width: 80px; margin-right: 8px; margin-top: 20px;" for="rs">Record Status:</label>  <input type="text" id="rs" name="rs" style="width: 150px;"> <br>
+          <label style="width: 80px; margin-right: 12px; margin-top: 20px;" for="lu">Last Updated:</label>  <input type="date" id="lu" name="lu" style="width: 150px;"> <br>
+
+        </form>
+
+        <button style="height: 50px; margin-left: 110px; margin-top: 50px; width: 90px; background-color: rgb(143, 167, 237); border: 3px solid rgb(19, 7, 109); font-size: large;" type="submit" value="Submit" onclick="submitforms()">SUBMIT</button>
+        <button type="reset" value="Reset" style="height: 50px; margin-left: 120px; width: 90px; background-color:rgb(143, 167, 237); border: 3px solid rgb(19, 7, 109); font-size: large ;" >RESET</button>
+    </body>
+  </div>
+</html>
