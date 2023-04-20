@@ -1,0 +1,71 @@
+.resume{
+  height: 830px;
+  width: 670px;
+  background-color: rgb(234, 240, 240);
+  border: 1px;
+  border-color: black;
+  zoom: 170%;
+  margin-left: 720px;
+  margin-top: 30px;
+}
+.right{
+  float: right;
+  height: 830px;
+  width: 200px;
+  background-color: blueviolet;
+  padding-top: 0px;
+  display: inline-block;
+}
+img{
+  border-radius: 90%;
+  border-color: white;
+  border: 5px;
+}
+.pp{
+  height: 170px;
+  width: 200px;
+  color: rgb(249, 250, 250);
+  text-align: center;
+  margin-top: 0px;
+  
+  padding-top: 15px;
+  background-color: rgb(101, 4, 190);
+}
+p{
+  font-size: 15px;
+}
+a{
+  color: white;
+  font-size: 11px;
+}
+.det{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.edu{
+  margin-left: 20px;
+  margin-top: 35px;
+}
+.lang{
+  margin-left: 20px;
+  margin-top: 35px;
+}
+.right{
+  margin-top: 0px;
+  margin-left: 25px;
+  
+}
+.bar{
+  height: 10px;
+  width: 260px;
+  border-radius: 20px;
+  background-color: rgb(176, 175, 175);
+  display: inline-block;
+}
+.html,.sql,.c,.python,.java{ 
+	animation: html 2s;
+  background: blueviolet;
+  height: 10px;
+  position: relative;
+  border-radius: 20px;
+}
