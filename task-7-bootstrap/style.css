@@ -1,0 +1,10 @@
+.header-right{
+  align-items: self-start;
+  font-size: 50px;
+}
+body{
+  zoom: 230%;
+}
+#search{
+  border-radius: 20px;
+}
