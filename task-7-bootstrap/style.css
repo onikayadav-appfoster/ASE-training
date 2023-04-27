@@ -1,11 +1,25 @@
-.header-right{
+.header-right .p{
   align-items: start;
   font-size: 50px;
   float: inline-start;
-  margin-left: 20px;
+  margin-left: 0px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  width: 170px;
 }
+.header-right {
+  align-items: end;
+  font-size: 0px;
+  float: inline-end;
+  margin-left:10px;
+  margin-bottom: 1px;
+  margin-top: 25px;
+  margin-right: 190px
+}
+
 body{
-  zoom: 320%;
+  zoom: 232%;
+  margin-top: 15px;
   background-color: rgb(221, 229, 236);
 }
 .searchbar,#search{
@@ -14,26 +28,26 @@ body{
   width: 500px;
   border-radius: 50px;
   border: none;
-  font-size: 19px;
+  font-size: 24px;
   padding-left: 12px;
   margin-left: 10px;
 }
 .dashboard{
   background-color: white;
-  height: 750px;
-  width: 1380px;
+  height: 770px;
+  width: 1900px;
   border-radius: 40px;
   margin-bottom: 25px;
-  margin-left: 0px;
+  margin-left: 105px;
   margin-right: 45px;
 }
 .wd,.t,.sva,.uid,.wbd,.da{
   border-radius: 40px;
-  height: 200px;
+  height: 220px;
   font-size: 30px;
   text-align: center;
-  width: 412px;
-  margin-left: 35px;
+  width: 575px;
+  margin-left: 40px;
   margin-top: 35px;
   padding-top: 10px;
 }
@@ -85,10 +99,11 @@ hr{
 }
 .dl{
   background-color: white;
-  font-size: 13px;
+  font-size: 14px;
   width: 90px;
-  padding-left: 14px;
-  height: 20px;
+  padding-left: 9px;
+  padding-top: 3px;
+  height: 28px;
   margin-left: 30px;
   margin-top: 10px;
   text-align: center;
@@ -130,5 +145,49 @@ img{
   display: inline-block;
   margin-left: 250px;
 }
+.status span{
+  font-size: 18px;
+}
+.material_icons{
+  size: large;
+  font-size: 55px;
+}
+.wd span{
+  float: inline-end;
+  margin-left: 330px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.t span{
+  float: inline-end;
+  margin-left: 330px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.sva span{
+  float: inline-end;
+  margin-left: 330px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.uid span{
+  float: inline-end;
+  margin-left: 330px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.da span{
+  float: inline-end;
+  margin-left: 330px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.wbd span{
+  float: inline-end;
+  margin-left: 330px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
 
 
