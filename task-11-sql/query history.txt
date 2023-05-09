@@ -1,0 +1,25 @@
+INSERT INTO Customers(customer_id,first_name,last_name,age,country) 
+VALUES (6,"Jimmy","Fallon",35,"Canada");
+
+
+INSERT INTO Customers(customer_id,first_name,last_name,age,country) 
+VALUES (7,"Betty","Clark", 21, "Mexico"),(8,"Clara","Rivera",19,"Switzerland"),(9,"Sungho","Jung",27,"South Korea"),(10,"Tinisha","Tiwari",25,"India");
+
+
+SELECT COUNT(*), country FROM Customers
+GROUP BY country ORDER BY country;
+
+
+SELECT * FROM Orders WHERE amount>100 AND amount<500;
+
+
+SELECT Customers.first_name, Customers.last_name FROM Customers  
+INNER JOIN Orders ON Orders.customer_id = Customers.customer_id WHERE Orders.item="Keyboard";
+
+
+SELECT Customers.country FROM Customers
+INNER JOIN Shippings ON Shippings.customer=Customers.customer_id
+WHERE Shippings.status="Pending";
+
+
+SELECT * FROM Customers INNER JOIN ( SELECT customer_id,count(*) AS orders FROM Orders  GROUP BY customer_id) AS c ON Customers.customer_id=c.customer_id;
