@@ -1,0 +1,6 @@
+this is just a file for checking and running all the linux commands
+multiple lines for checking the 
+cat and
+less c
+commands
+

@@ -1,0 +1,50 @@
+cd
+ls
+cd appfoster-ase-training
+ls
+ls -l
+rmdir task-9-cli
+mkdir task-9-cli
+ls -l
+cd task-9-cli
+touch cmnd.txt
+cd ..
+touch move.txt
+cd task-9-cli
+mv move.txt cmnd.txt
+cd ..
+ls -l
+rm move.txt
+cd task-9-cli
+wc -l cmnd.txt
+ls | wc
+curl https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
+curl https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch -L -I | grep location
+curl https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch -L -I | grep location | awk '{ print "https://developer.mozilla.org" $2 }'
+vim cmnd.txt
+vim cmnd.txt
+rm cmd.txt.swp
+vim cmnd.txt
+cat cmnd.txt
+cat -n cmnd.txt
+cat -v cmnd.txt
+more -3 cmnd.txt
+less cmnd.txt
+grep -n "commands" cmnd.txt
+grep -o "commands" cmnd.txt
+echo "commands" | sed s/commands/cmds
+ls -l
+history -w ~/history.txt
+touch history.txt
+ls -l
+history ~w ~/history.txt
+vim history.txt
+history ~w history.txt
+history ~a
+cp ~/.bash_history history.txt
+git branch > out.txt
+history | grep git
+history -n 75
+history ~w 75
+history -a 
+history -w result.txt

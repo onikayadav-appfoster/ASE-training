@@ -1,0 +1,266 @@
+
+onika@Onika-Yadav-07101 MINGW64 ~ (master)
+$ cd
+
+onika@Onika-Yadav-07101 MINGW64 ~ (master)
+$ ls
+'3D Objects'/
+ AndroidStudioProjects/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Dropbox/
+ Favorites/
+ IBA_IOAPDATA/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Microsoft/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{fd0f8177-a978-11ed-a33c-b44bed7f5a03}.TxR.0.regtrans-ms
+ NTUSER.DAT{fd0f8177-a978-11ed-a33c-b44bed7f5a03}.TxR.1.regtrans-ms
+ NTUSER.DAT{fd0f8177-a978-11ed-a33c-b44bed7f5a03}.TxR.2.regtrans-ms
+ NTUSER.DAT{fd0f8177-a978-11ed-a33c-b44bed7f5a03}.TxR.blf
+ NTUSER.DAT{fd0f8178-a978-11ed-a33c-b44bed7f5a03}.TM.blf
+ NTUSER.DAT{fd0f8178-a978-11ed-a33c-b44bed7f5a03}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd0f8178-a978-11ed-a33c-b44bed7f5a03}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ appfoster-ase-training/
+ easy-VQA-keras/
+ eclipse/
+ eclipse-jee-indigo-SR2-win32-x86_64.zip
+ exampractice.js
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+'phone album'/
+'project report.pdf'
+'riya backup'/
+'riya phone photos'/
+ testgit/
+ workspace/
+
+onika@Onika-Yadav-07101 MINGW64 ~ (master)
+$ cd appfoster-ase-training
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ ls
+appfoster-ase-training.code-workspace  task-6-css/         task-9-cli/
+task-3-basic-html/                     task-7-bootstrap/
+task-4-html-form/                      task-8-javascript/
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ ls -l
+total 1
+-rw-r--r-- 1 onika 197609 60 Apr 10 16:07 appfoster-ase-training.code-workspace
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-3-basic-html/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-4-html-form/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-6-css/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-7-bootstrap/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-8-javascript/
+drwxr-xr-x 1 onika 197609  0 May  8 20:01 task-9-cli/
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ rmdir task-9-cli
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ mkdir task-9-cli
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ ls -l
+total 1
+-rw-r--r-- 1 onika 197609 60 Apr 10 16:07 appfoster-ase-training.code-workspace
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-3-basic-html/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-4-html-form/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-6-css/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-7-bootstrap/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-8-javascript/
+drwxr-xr-x 1 onika 197609  0 May  9 11:25 task-9-cli/
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ cd task-9-cli
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ touch cmnd.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ cd ..
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ touch move.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ cd task-9-cli
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ mv move.txt cmnd.txt
+mv: cannot stat 'move.txt': No such file or directory
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ cd ..
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ ls -l
+total 1
+-rw-r--r-- 1 onika 197609 60 Apr 10 16:07 appfoster-ase-training.code-workspace
+-rw-r--r-- 1 onika 197609  0 May  9 11:26 move.txt
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-3-basic-html/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-4-html-form/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-6-css/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-7-bootstrap/
+drwxr-xr-x 1 onika 197609  0 May  3 18:12 task-8-javascript/
+drwxr-xr-x 1 onika 197609  0 May  9 11:26 task-9-cli/
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ rm move.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training (main)
+$ cd task-9-cli
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ wc -l cmnd.txt
+0 cmnd.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ ls | wc
+      1       1       9
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ curl https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    59  100    59    0     0    179      0 --:--:-- --:--:-- --:--:--   180Moved Permanently. Redirecting to /en-US/docs/Web/API/fetch
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ ^C
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ curl https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch -L -I | grep location
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0    59    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0location: /en-US/docs/Web/API/fetch
+
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ curl https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch -L -I | grep location | awk '{ print "https://developer.mozilla.org" $2 }'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0    59    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+https://developer.mozilla.org/en-US/docs/Web/API/fetch
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ vim cmnd.txt
+
+[1]+  Stopped                 vim cmnd.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ vim cmnd.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ rm cmd.txt.swp
+rm: cannot remove 'cmd.txt.swp': No such file or directory
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ vim cmnd.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ cat cmnd.txt
+this is just a file for checking and running all the linux commands
+multiple lines for checking the
+cat and
+less c
+commands
+
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ cat -n cmnd.txt
+     1  this is just a file for checking and running all the linux commands
+     2  multiple lines for checking the
+     3  cat and
+     4  less c
+     5  commands
+     6
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ cat -v cmnd.txt
+this is just a file for checking and running all the linux commands
+multiple lines for checking the
+cat and
+less c
+commands
+
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ more -3 cmnd.txt
+bash: more: command not found
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ less cmnd.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ grep -n "commands" cmnd.txt
+1:this is just a file for checking and running all the linux commands
+5:commands
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ grep -o "commands" cmnd.txt
+commands
+commands
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ echo "commands" | sed s/commands/cmds
+sed: -e expression #1, char 15: unterminated `s' command
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ ls -l
+total 1
+-rw-r--r-- 1 onika 197609 126 May  9 11:57 cmnd.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ history -w ~/history.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ touch history.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ ls -l
+total 1
+-rw-r--r-- 1 onika 197609 126 May  9 11:57 cmnd.txt
+-rw-r--r-- 1 onika 197609   0 May  9 12:28 history.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ history ~w ~/history.txt
+bash: history: ~w: numeric argument required
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ vim history.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ history ~w history.txt
+bash: history: ~w: numeric argument required
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ history ~a
+bash: history: ~a: numeric argument required
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$ cp ~/.bash_history history.txt
+
+onika@Onika-Yadav-07101 MINGW64 ~/appfoster-ase-training/task-9-cli (main)
+$
