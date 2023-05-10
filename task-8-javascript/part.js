@@ -1,48 +1,50 @@
-function splitcol()
-{
-  //let form=document.querySelector('form');
-  let divi=document.getElementsByClassName("vide");
- 
-  
-  let t=no;
-  let i=0;
-  let no=Number(document.getElementById("no").value);
-  let split=Number(document.getElementById("split").value);
-  const coldiv=new Array(split).fill(0);
-  let colm = coldiv;
-  while(t>0)
+function splitcol() {
+  let no = Number(document.getElementById("no").value);
+  let split = Number(document.getElementById("split").value);
+  let col=document.getElementById("vide");
+  if (no < split || no <= 0 || split <= 0) 
   {
-    if(i==split)
-    { i=0; }
-    coldiv[i]++;
-    i++;
-    t--;
-  }
-  if(split>no || split==0 || no==0)
+    var c = document.createElement("div");
+    c.style.width = "150px";
+    c.style.marginLeft="20px";
+    c.style.marginBottom="10px";
+    c.innerHTML='<button class="btn btn-primary">Wrong Input</button>';
+    col.appendChild(c);
+  } 
+  else 
   {
-    var cont=document.createElement("div");
-    cont.innerHTML= <button>Wrong Input</button>
-  }
-    /*function generateRandomColor(){
-      let maxVal = 0xFFFFFF; // 16777215
-      let randomNumber = Math.random() * maxVal; 
-      randomNumber = Math.floor(randomNumber);
-      randomNumber = randomNumber.toString(16);
-      let randColor = randomNumber.padStart(6, 0);   
-      return `#${randColor.toUpperCase()}`
-    }*/
-  console.log(colm);
-    //divi.innerHTML="";
-  
-  for(let i=0;i<split;i++)
-  {
-    var cont=document.createElement("div");
-    var colw=Math.floor(coldiv[i]/no)*100;
-    var clr =Math.floor{(Math.random()*16777215).toString(16)};
-    cont.style.backgroundColor = rgb ({clr}) ;
-    cont.style.width = {colw[i]}%;
-    cont.innerHTML=`${coldiv[i]}`;
-    cont.style.float='left';
-    divi.appendChild(cont);
+    let coldiv = Array.from({ length: split }).fill(0);
+    let i=0;
+    let t=no;
+    while(t>0)
+    {
+     if(i==split)
+     { i=0; }
+     coldiv[i]++;
+     i++;
+     t--;
+    }
+    let colm = coldiv.slice(0);
+    for (let i = 0; i < split; i++) {
+      colm[i] = ((colm[i] * 100) / no);
+    }
+    console.log(colm);
+    for (let i = 0; i < split; i++) {
+      var c = document.createElement("div");
+      c.style.width = `${colm[i]}%`;
+      c.style.height = "100px";
+      c.style.textAlign = "center";
+      c.style.display= "inline-block";
+      c.style.marginBottom= "10px";
+      
+      var x = Math.floor(Math.random() * 256);
+      var y = Math.floor(Math.random() * 256);
+      var z = Math.floor(Math.random() * 256);
+      var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+      c.style.backgroundColor = bgColor;
+
+      c.innerHTML = `${coldiv[i]}`;
+      col.appendChild(c);
+    }
   }
 }

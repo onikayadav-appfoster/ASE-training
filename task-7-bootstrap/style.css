@@ -1,55 +1,62 @@
 .header-right .p{
   align-items: start;
   font-size: 50px;
+  display: inline-block;
   float: inline-start;
   margin-left: 0px;
-  margin-bottom: 15px;
-  margin-top: 50px;
-  width: 170px;
+  margin-bottom: 12px;
+  margin-top: 0px;
+  width: 0px;
 }
-.header-right {
+.header-right .s{
   align-items: end;
   font-size: 0px;
+  display: end;
   float: inline-end;
-  margin-left:10px;
-  margin-bottom: 1px;
-  margin-top: 25px;
-  margin-right: 190px
+  margin-left: 0%;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  margin-right: 0px;
 }
 
 body{
-  zoom: 232%;
+  
   margin-top: 15px;
   background-color: rgb(221, 229, 236);
 }
 .searchbar,#search{
-  height: 40px;
+  height: 30px;
   display: inline-block;
-  width: 500px;
+  width: 55%;
   border-radius: 50px;
   border: none;
-  font-size: 24px;
+  font-size: 17px;
   padding-left: 12px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .dashboard{
   background-color: white;
-  height: 770px;
-  width: 1900px;
+  height:  0%;
+  float: right;
+  width: 92%;
   border-radius: 40px;
-  margin-bottom: 25px;
-  margin-left: 105px;
-  margin-right: 45px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 3%;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 .wd,.t,.sva,.uid,.wbd,.da{
   border-radius: 40px;
-  height: 220px;
-  font-size: 30px;
+  height: 150px;
+  font-size: 20px;
   text-align: center;
-  width: 575px;
-  margin-left: 40px;
-  margin-top: 35px;
-  padding-top: 10px;
+  width: 30%;
+  margin-left: 3%;
+  margin-top: 7px;
+  padding-top: 5px;
 }
 .wd{
   background-color: rgb(250, 229, 197);
@@ -59,7 +66,7 @@ body{
 }
 .sva{
   background-color: rgb(208, 240, 252);
-  margin-right: 35px;
+  margin-right: ;
 }
 .uid{
   background-color: rgb(254, 227, 232);
@@ -69,43 +76,52 @@ body{
 }
 .wbd{
   background-color: rgb(214, 220, 255);
-  margin-right: 35px;
+  margin-right: ;
 }
 .date{
-  font-size: 20px;
+  font-size: 14px;
   margin-left: 20px;
   margin-top: 10px;
   text-align: left;
 }
 .desc{
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
+  margin-bottom: 0px;
 }
 .projects{
   margin-left: 45px;
-  padding-top: 40px;
-  font-size: 25px;
+  padding-top: 20px;
+  font-size: 20px;
   font-weight: bold;
   color: #605f5f;
+  margin-bottom: 0px;
+  
+}
+.status{
+  margin-top: 0%;
+  float: ;
+  vertical-align: bottom;
+  flex-direction: row;
 }
 hr{
   color: white;
   height: 2pt;
   border: white;
   background-color: white;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   border: 5px;
   
 }
 .dl{
   background-color: white;
-  font-size: 14px;
-  width: 90px;
+  font-size: 10px;
+  width: 70px;
   padding-left: 9px;
-  padding-top: 3px;
-  height: 28px;
+  padding-top: 0px;
+  height: 15px;
   margin-left: 30px;
-  margin-top: 10px;
+  margin-top: 2px;
   text-align: center;
   opacity: 70%;
   border-radius: 30px;
@@ -134,6 +150,8 @@ hr{
   border-radius: 50%;
   display: inline-block;
   border-width: 0px;
+  display: inline-block;
+  margin-left: 0px;
 }
 img{
   border-radius: 50%;
@@ -141,51 +159,49 @@ img{
   width: 20px;
   zoom: 180%;
 }
-.tb{
-  display: inline-block;
-  margin-left: 250px;
-}
+
 .status span{
-  font-size: 18px;
+  font-size: 14px;
 }
 .material_icons{
   size: large;
   font-size: 55px;
 }
 .wd span{
-  float: inline-end;
-  margin-left: 330px;
-  font-size: 30px;
+  float:end;
+  margin-left: 0%;
+  display: inline;
+  font-size: 20px;
   font-weight: bolder;
 }
 .t span{
   float: inline-end;
-  margin-left: 330px;
-  font-size: 30px;
+  margin-left: 0%;
+  font-size: 20px;
   font-weight: bolder;
 }
 .sva span{
   float: inline-end;
-  margin-left: 330px;
-  font-size: 30px;
+  margin-left: 0%;
+  font-size: 20px;
   font-weight: bolder;
 }
 .uid span{
   float: inline-end;
-  margin-left: 330px;
-  font-size: 30px;
+  margin-left: 0%;
+  font-size: 20px;
   font-weight: bolder;
 }
 .da span{
   float: inline-end;
-  margin-left: 330px;
-  font-size: 30px;
+  margin-left: 0%;
+  font-size: 20px;
   font-weight: bolder;
 }
 .wbd span{
   float: inline-end;
-  margin-left: 330px;
-  font-size: 30px;
+  margin-left: 0%;
+  font-size: 20px;
   font-weight: bolder;
 }
 
