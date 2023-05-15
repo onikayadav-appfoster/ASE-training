@@ -1,9 +1,13 @@
+
 function splitcol() {
+  let clr=document.getElementById("submit");
+  clr.onclick=function(){location.reload();}
   let no = Number(document.getElementById("no").value);
   let split = Number(document.getElementById("split").value);
   let col=document.getElementById("vide");
   if (no < split || no <= 0 || split <= 0) 
   {
+    
     var c = document.createElement("div");
     c.style.width = "150px";
     c.style.marginLeft="20px";
@@ -46,5 +50,7 @@ function splitcol() {
       c.innerHTML = `${coldiv[i]}`;
       col.appendChild(c);
     }
+   
   }
+  
 }
