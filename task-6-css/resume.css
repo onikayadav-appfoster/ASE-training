@@ -1,16 +1,15 @@
 .resume{
-  height: 830px;
-  width: 670px;
+  height: 665px;
+  width: 650px;
   background-color: rgb(234, 240, 240);
   border: 1px;
   border-color: black;
-  zoom: 100%;
-  margin-left: 720px;
-  margin-top: 30px;
+  margin-left: 20%;
+  margin-top:0px;
 }
 .right{
   float: right;
-  height: 830px;
+  height: 100%;
   width: 200px;
   background-color: blueviolet;
   padding-top: 0px;
@@ -22,7 +21,7 @@ img{
   border: 5px;
 }
 .pp{
-  height: 170px;
+  height: 150px;
   width: 200px;
   color: rgb(249, 250, 250);
   text-align: center;
@@ -31,8 +30,8 @@ img{
   padding-top: 15px;
   background-color: rgb(101, 4, 190);
 }
-p{
-  font-size: 15px;
+span{
+  font-size: 13px;
 }
 a{
   color: white;
@@ -44,11 +43,11 @@ a{
 }
 .edu{
   margin-left: 20px;
-  margin-top: 35px;
+  margin-top: 10px;
 }
 .lang{
   margin-left: 20px;
-  margin-top: 35px;
+  margin-top: 10px;
 }
 .right{
   margin-top: 0px;
