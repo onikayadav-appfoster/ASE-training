@@ -11,7 +11,7 @@
 .header-right .s{
   align-items: end;
   font-size: 0px;
-  display: block;
+  display: flex;
   float: right;
   margin-left: 0%;
   margin-bottom: 15px;
