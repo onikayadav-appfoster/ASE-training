@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="listingpage.js"></script>
+  <!--<script src="listingpage.js"></script>-->
   <title>User Listing Page</title>
   <style>
     .box{
@@ -35,43 +35,7 @@
       
       float: right;
     }
-    .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+  
   </style>
 </head>
 <body style="background-color: rgb(212, 210, 210);">
@@ -118,13 +82,23 @@
       <hr width="95%" size="250" align="center" backgroundcolor="black"> 
 
       <p class="text-primary" >Narayan Khan</p>
-      <button class="btn" id="action"  style="float: right;"><i class="material-icons text-primary">visibility</i></button>
+      <button class="btn" id="action"  style="float: right;" data-toggle="modal" data-target
+      ="#newModal"><i class="material-icons text-primary">visibility</i></button>
      </div>
   </div>
-  <div class="modal" id="myModal" >
-    <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the modal.</p> 
+  <div class="modal fade" id="newModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sample Modal</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is demo text.</p>
+        </div>
+      </div>
+      
     </div>
   </div>
   

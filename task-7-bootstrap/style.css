@@ -1,62 +1,43 @@
-.header-right .p{
-  align-items: start;
-  font-size: 50px;
-  display: block;
-  float: left;
-  margin-left: 0px;
-  margin-bottom: 12px;
-  margin-top: 0px;
-  width: 0px;
-}
-.header-right .s{
-  align-items: end;
-  font-size: 0px;
-  display: flex;
-  float: right;
-  margin-left: 0%;
-  margin-bottom: 15px;
-  margin-top: 50px;
-  margin-right: 0px;
-}
 
 body{
   
-  margin-top: 15px;
+  margin-left: 8px;
   background-color: rgb(221, 229, 236);
 }
-.searchbar,#search{
-  height: 30px;
-  display: inline-block;
-  width: 55%;
-  border-radius: 50px;
+.search-form {
+  width: 100%;
+  padding: 5px;
+  position: relative;
   border: none;
-  font-size: 17px;
-  padding-left: 12px;
-  margin-left: 0px;
+  border-radius: 20px;
 }
+
+.search-btn {
+  position: absolute;
+  background-color: white;
+  border: none;
+  margin-top: 7px;
+  margin-left: -30px;}
+  
 .dashboard{
   background-color: white;
-  height:  0%;
-  float: left;
-  width: 55%;
   border-radius: 40px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  margin-left: 10px;
-  margin-right: 3%;
-  display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
+  height: 99%;
+    width: 95%;
+    
+    padding: 30px;
+    margin-right: 0px;
+    margin-top: 10px;
 }
 .wd,.t,.sva,.uid,.wbd,.da{
   border-radius: 40px;
-  height: 150px;
+  
   font-size: 20px;
   text-align: center;
-  width: 30%;
-  margin-left: 3%;
-  margin-top: 7px;
-  padding-top: 5px;
+  
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
 }
 .wd{
   background-color: rgb(250, 229, 197);
@@ -90,21 +71,18 @@ body{
   margin-bottom: 0px;
 }
 .projects{
-  margin-left: 45px;
-  padding-top: 20px;
+
   font-size: 20px;
-  display: block;
-  float: left;
+  padding-left: 30px;
+  padding-right: 30px;
   font-weight: bold;
   color: #605f5f;
-  margin-bottom: 0px;
+ 
   
 }
 .status{
-  margin-top: 0%;
-  float: ;
-  vertical-align: bottom;
-  flex-direction: row;
+  margin-left:20px;
+  
 }
 hr{
   color: white;
@@ -115,15 +93,18 @@ hr{
   border: 5px;
   
 }
+ul{
+  padding-left: 0; 
+}
 .dl{
   background-color: white;
-  font-size: 10px;
-  width: 70px;
-  padding-left: 9px;
-  padding-top: 0px;
-  height: 15px;
-  margin-left: 30px;
-  margin-top: 2px;
+  font-size: 15px;
+  width: 100px;
+  padding-left: 0px;
+  
+  height: 24px;
+  margin-left: 20px;
+  margin-top: 0px;
   text-align: center;
   opacity: 70%;
   border-radius: 30px;
@@ -147,14 +128,7 @@ hr{
 .wbd .dl{
   color: rgb(61, 81, 232);
 }
-.tb{
-  background-color: rgb(221, 229, 236);
-  border-radius: 50%;
-  display: inline-block;
-  border-width: 0px;
-  display: inline-block;
-  margin-left: 0px;
-}
+
 img{
   border-radius: 50%;
   height: 20px;
@@ -170,42 +144,37 @@ img{
   font-size: 55px;
 }
 .wd span{
-  float:end;
-  margin-left: 0%;
-  display: inline;
+  
   font-size: 20px;
   font-weight: bolder;
 }
 .t span{
-  float: inline-end;
-  margin-left: 0%;
+ 
   font-size: 20px;
   font-weight: bolder;
 }
 .sva span{
-  float: inline-end;
-  margin-left: 0%;
+  
   font-size: 20px;
   font-weight: bolder;
 }
 .uid span{
-  float: inline-end;
-  margin-left: 0%;
+ 
   font-size: 20px;
   font-weight: bolder;
 }
 .da span{
-  float: inline-end;
-  margin-left: 0%;
+ 
   font-size: 20px;
   font-weight: bolder;
 }
 .wbd span{
-  float: inline-end;
-  margin-left: 0%;
+
   font-size: 20px;
   font-weight: bolder;
 }
-
+.i span{
+  margin-right: 20px;
+}
 
 
