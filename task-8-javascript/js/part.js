@@ -1,10 +1,20 @@
 
+  function refdet () {
+    let clr=document.getElementById("submit");
+    let out=document.getElementById("split");
+    clr.onclick=splitcol();
+   //out.ondblclick=location.reload();
+    
+  }
+
 function splitcol() {
-  let clr=document.getElementById("submit");
-  clr.onclick=function(){location.reload();}
+  
+  
+  
   let no = Number(document.getElementById("no").value);
   let split = Number(document.getElementById("split").value);
   let col=document.getElementById("vide");
+  
   if (no < split || no <= 0 || split <= 0) 
   {
     
@@ -32,6 +42,7 @@ function splitcol() {
     for (let i = 0; i < split; i++) {
       colm[i] = ((colm[i] * 100) / no);
     }
+    console.clear();
     console.log(colm);
     for (let i = 0; i < split; i++) {
       var c = document.createElement("div");
@@ -52,5 +63,7 @@ function splitcol() {
     }
    
   }
+  if(col!=0)
+    split.onchange=location.reload();
   
 }
