@@ -123,68 +123,10 @@
 
 
 
-  <script>
-    // Sample data
-    function extractdata(){
-      fetch('file data af.txt')
-      .then(response => response.text())
-      .then(text => {const regex = /\[\{\"\"\:\"(.*?)\"\}\]/g;
-      const matches = text.match(regex));
-      if (matches) {
-        // Remove brackets and commas from each match
-        const words = matches.map(match => match.replace(/[\[\],]/g, ''));
-
-        // Do whatever you want with the extracted words
-        ;
-      }
-    }
-    const userData = {
-      name: "Narayan Khan",
-      id: "2442844",
-      email: "narayan_khan@emard-greenholt.example",
-      gender:"male",
-      status: "active",
-    };
-    userdata.name=words;
-    // Get elements
-    const modal = document.getElementById("myModal");
-    var btn = document.getElementsByClassName("btn");
-    const span = document.getElementsByClassName("close")[0];
-    const username = document.getElementById("username");
-    const modalUsername = document.getElementById("modalUsername");
-    const projectId = document.getElementById("projectId");
-    const useremail = document.getElementById("useremail");
-    const userstatus = document.getElementById("userstatus");
-    const gender = document.getElementById("gender");
-
-    // Display username
-    username.textContent = userData.name;
-
-    var ar= btn[1];
-
-    // Button click event listener
-    ar.addEventListener("click", function() {
-      // Populate modal with user project information
-      modalUsername.textContent = userData.name;
-      projectId.textContent = userData.id;
-      useremail.textContent= userData.email;
-      userstatus.textContent= userData.status;
-      gender.textContent= userData.gender;
-      modal.style.display = "block";
-    });
-
-    // Close modal when close button is clicked
-    span.addEventListener("click", function() {
-      modal.style.display = "none";
-    });
-
-    // Close modal when user clicks outside of it
-    window.addEventListener("click", function(event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-  </script>
+  <script src="action.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
   
 </body>
 </html>
