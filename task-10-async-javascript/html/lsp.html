@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--<script src="../js/listingpage.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  
   <title>User Listing Page</title>
   <style>
     .box{
@@ -14,31 +15,32 @@
       border-radius: 10px;
       border: none;
       box-shadow: 0 4px 8px 0 rgba(138, 136, 136, 0.2), 0 6px 20px 0 rgba(138, 136, 136, 0.2);
-      height: 678px;
-      width:40%;
+      height: 98%;
+      width:30%;
       padding: 25px;
       margin-top: 20px;
-      margin-left: 27%;
+      margin-left: 30%;
       display: inline-block;
     
       justify-content: space-between;
     }
     #myModal{
-      height: 500px;
-      width: 700px;
+      height: 95%;
+      width: 40%;
       display: center;
       position: absolute;
       left: 47%;
-      top: 50%;
+      top: 80%;
       transform: translate(-50%, -50%);
       text-align: center;
     }
-    .det p{
-      font-size: 18px;
-      float: left;
+    ul{
+      font-size: 22px;
+      padding-left: 0px;
       white-space: nowrap;
+      color: rgb(34, 151, 214);
     }
-    .det  button{
+     button{
       border: none;
       background-color: white;
       
@@ -49,84 +51,95 @@
     }
     .close{
       margin: 20px;
+      border: 2px black;
+      float: right;
     }
-  
+    ul li {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+    .modal-content {
+      border: 1px solid grey;
+      background-color: #ccc; /* Medium grey background color */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    #myModal {
+      display: none;
+    }
   </style>
 </head>
+
 <body style="background-color: rgb(212, 210, 210);">
+
   <div class="box">
-    <span class="users" style="float: left; font-size: 22px;">  Users</span> 
-    <span class="" style="float: right; font-size: 22px;">Action</span>
-    <hr width="95%" size="250" align="center" backgroundcolor="black"> 
 
-    <div class="det">
-      <p class=" txt text-primary" style="float:left">Rati Patel </p>
-      <button class="btn"  id="actionButtonButton" style="float: right;"><i class="material-icons text-primary">visibility</i></button>
-      <hr width="95%" size="250" align="center" backgroundcolor="black"> 
+    <span class="users" style="float: left; font-size: 28px;">Users</span> 
+    <span class="" style="float: right; font-size: 28px;">Action</span>
+    <hr width="98%"  align="center" backgroundcolor="black"> 
 
-      <p class="text-primary" style="float:left" >Fr. Adityanandan Dhawan</p>
-      <button class="btn"  id="actionButtonButton"  style="float: right;"><i class="material-icons text-primary">visibility</i></button> 
-      <hr width="95%" size="250" align="center" backgroundcolor="black"> 
+    <ul style="list-style-type:none;">
+    </ul>
 
-      <p class="text-primary" >Digambar Sharma DO</p>
-      <button class="btn" id="actionButtonButton"  style="float: right;"><i class="material-icons text-primary">visibility</i></button> 
-      <hr width="95%" size="250" align="center" backgroundcolor="black"> 
+  </div>
 
-      <p class="text-primary" >Mrs. Priyala Tandon</p>
-      <button class="btn"  id="actionButtonButton"  style="float: right;"><i class="material-icons text-primary">visibility</i></button> 
-      <hr width="95%" size="250" align="center" backgroundcolor="black"> 
-
-      <p class="text-primary" >Bodhan Nair</p>
-      <button class="btn" id="actionButtonButton"  style="float: right;"><i class="material-icons text-primary">visibility</i></button> 
-      <hr width="95%" size="250" align="center" backgroundcolor="black"> 
-
-      <p class="text-primary" >Purnima Patel</p>
-      <button class="btn" id="actionButtonButton"  style="float: right;"><i class="material-icons text-primary">visibility</i></button> 
-      <hr width="95%" size="250" align="center" backgroundcolor="black"> 
-      
-      <p class="text-primary" >Eekalabya Kaul</p>
-      <button class="btn" id="actionButtonButton"  style="float: right;"><i class="material-icons text-primary">visibility</i></button> 
-      <hr width="95%" size="250" align="center" backgroundcolor="black"> 
-
-      <p class="text-primary" >Prof. Dhara Gandhi</p>
-      <button class="btn" id="actionButtonButton"  style="float: right;"><i class="material-icons text-primary">visibility</i></button> 
-      <hr width="95%" size="250" align="center" backgroundcolor="black"> 
-
-      <p class="text-primary" >Shashikala Rana</p>
-      <button class="btn"  id="actionButtonButton"  style="float: right;"><i class="material-icons text-primary">visibility</i></button> 
-      <hr width="95%" size="250" align="center" backgroundcolor="black"> 
-
-      <p class="text-primary" ><span id="username"></span></p>
-      <button class="btn" id="actionButtonButton"  style="float: right;" ><i class="material-icons text-primary">visibility</i></button>
-     </div>
-    </div>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>User Information</h2>
-        <p>User: <span id="modalUsername"></span></p>
-        <p>Id: <span id="projectId"></span></p>
-        <p>Email: <span id="useremail"></span></p>
-        <p>Gender: <span id="gender"></span></p>
-        <p>Status: <span id="userstatus"></span></p>
-      </div>
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>User Information</h2>
+      <p>User: <span id="modalUsername"></span></p>
+      <p>Email: <span id="useremail"></span></p>
+      <p>Gender: <span id="gender"></span></p>
+      <p>Status: <span id="userstatus"></span></p>
     </div>
   </div>
 
+  <script>
 
+    fetch('https://gorest.co.in/public/v2/users')
+      .then(res => res.json())
+      .then(data => {
+        data.forEach(user => {
+          const markup = `<li class='text-primary'> ${user.name} 
+            <button class="actionButton text-primary"  style="float: right; color: rgb(34, 151, 214);  background-color:white; "data-toggle="modal" data-target="#myModal" data-user='${JSON.stringify(user)}'><i class="material-icons text-primary">visibility</i></button> 
+            <hr width="98%"  align="center" backgroundcolor="black">  </li>`;
 
+          document.querySelector("ul").insertAdjacentHTML('beforeend', markup);
+        });
+          const actionButtons = document.querySelectorAll(".actionButton");
+        actionButtons.forEach(button => {
+          button.addEventListener("click", () => {
+            const user = JSON.parse(button.getAttribute("data-user"));
+            openModal(user);
+            });
+          });
+        
+      })
+      .catch(error => console.log(error));
 
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
 
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
 
+    function openModal(user) {
+      document.getElementById("modalUsername").innerText = user.name;
+      document.getElementById("useremail").innerText = user.email;
+      document.getElementById("gender").innerText = user.gender;
+      document.getElementById("userstatus").innerText = user.status;
+      modal.style.display = "block";
+     }
 
+  </script>
 
-
-
-
-  <script src="action.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-  
 </body>
 </html>
